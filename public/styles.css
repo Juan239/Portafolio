@@ -10,17 +10,17 @@ body {
     font-family: Arial, sans-serif;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+
 }
 
 #gradient {
-    position: absolute;
+    position: fixed; /* Cambiado a fixed para que cubra todo el viewport */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: 0;
+    z-index: -1; /* Asegúrate de que esté detrás de los elementos principales */
 }
 
 .splash {
@@ -60,3 +60,25 @@ body {
         transform: translateY(-5px);
     }
 }
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+
+
+}
+
+.about p{
+    width: 80vh;
+}
+
+.about h2 {
+    text-align: left;
+}
+
+    
