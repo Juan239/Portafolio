@@ -65,8 +65,11 @@ window.addEventListener("load", () => {
 });
 
 scrollDownButtons.forEach((button, index) => {
+    console.log("Boton presionado");
+    
     button.addEventListener("click", () => {
         const nextSection = sections[index + 1];
+        console.log("Siguiente sección ", nextSection);
         if (nextSection) {
             nextSection.scrollIntoView({ behavior: "smooth" });
         }

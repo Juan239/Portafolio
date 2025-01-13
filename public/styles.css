@@ -171,23 +171,23 @@ body {
 
 @media (max-width: 1200px) {
     h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     time {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .scroll-down {
@@ -198,23 +198,23 @@ body {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     time {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .about, .experiencia {
@@ -230,23 +230,23 @@ body {
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     h2 {
-        font-size: 1.2rem;
-    }
-
-    h3 {
         font-size: 1rem;
     }
 
-    p {
+    h3 {
         font-size: 0.9rem;
     }
 
+    p {
+        font-size: 0.8rem;
+    }
+
     time {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
     .splash, .about, .experiencia {
