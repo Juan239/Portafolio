@@ -6,6 +6,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html, body {
+    touch-action: manipulation; /* O usa 'none' para bloquear todo tipo de gestos */
+    -ms-touch-action: manipulation;
+}
+
 h1{
     font-size: 2rem;
 }
