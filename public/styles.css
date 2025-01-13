@@ -57,6 +57,43 @@ body {
     width: 100%;
     position: relative; 
 }
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.link-perfiles{
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0 10px;
+    width: 8rem;
+}
+
+.link-perfiles img{
+    width: 20px;
+    margin-right: 8px;
+}
+
+.link-perfiles:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.link-perfiles:hover #github-icon {
+    content: url('./images/github-light.svg');
+}
+
 
 .scroll-down {
     position: fixed;
@@ -80,8 +117,8 @@ body {
 
 .scroll-up {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    top: 20px;
+    left: 20px;
     background: none;
     border: none;
     padding: 10px;
@@ -167,6 +204,58 @@ body {
 
 .itemExperiencia:last-child{
     margin-bottom: 0;
+}
+
+/* Sección de proyectos */
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 80vh;
+}
+
+/* Sección de tecnologías */
+.tecnologias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 80vh;
+}
+
+.tecnologias h2{
+    margin-bottom: 5rem;
+}
+
+.techList{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.techItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.techItem:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.techIcon{
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 1200px) {
