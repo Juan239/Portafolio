@@ -3,9 +3,34 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+time{
+    font-size: 1.2rem;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: black;
     font-family: Arial, sans-serif;
     padding: 0;
@@ -14,13 +39,13 @@ body {
 }
 
 #gradient {
-    position: fixed; /* Cambiado a fixed para que cubra todo el viewport */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: -1; /* Asegúrate de que esté detrás de los elementos principales */
+    z-index: -1;
 }
 
 .splash {
@@ -34,19 +59,40 @@ body {
 }
 
 .scroll-down {
-    position: absolute;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 30px;
     background: none;
     border: none;
     padding: 10px;
     cursor: pointer;
     animation: bounce 2s infinite;
-    z-index: 1;
+    z-index: 10;
     transition: transform 0.3s;
+    display: none;
 }
 
 .scroll-down:hover {
-    transform: scale(1.2); 
+    transform: translateX(-50%) scale(1.2);
+}
+
+
+.scroll-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    transition: transform 0.3s;
+    display: none;
+}
+
+.scroll-up:hover {
+    transform: scale(1.2);
 }
 
 @keyframes bounce {
@@ -68,17 +114,149 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 100%;
-
-
-}
-
-.about p{
     width: 80vh;
+
 }
+
 
 .about h2 {
     text-align: left;
 }
 
+/* Sección de experiencia laboral*/
+
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 15vh;
+    height: 100vh;
+    width: 80vh;
+}
+
+.listaExperiencia{
+    position: relative;
+    border-inline-start: 1px solid white;
+    padding-left: 20px ;
+    padding-bottom: 40px;
+    list-style: none;
+}
+
+.decorativeCircleList{
+    position: absolute;
+    left: -6px;
+    height: 11px;
+    width: 11px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 5px;
     
+}
+
+.itemExperiencia{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.itemExperiencia h3{
+    margin-bottom: 15px;
+}
+
+
+.itemExperiencia:last-child{
+    margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    time {
+        font-size: 0.9rem;
+    }
+
+    .scroll-down {
+        left: 20px;
+        transform: translate(-50%, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    time {
+        font-size: 0.8rem;
+    }
+
+    .about, .experiencia {
+        width: 90%;
+    }
+
+    .scroll-down {
+        left: 20px;
+        transform: translate(-50%, 0);
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    time {
+        font-size: 0.7rem;
+    }
+
+    .splash, .about, .experiencia {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .scroll-down {
+        left: 20px;
+        transform: translate(-50%, 0);
+        bottom: 15px;
+    }
+}

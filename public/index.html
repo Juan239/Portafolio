@@ -5,28 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Juan Rodríguez</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 <body>
   <div id="gradient"></div>
 
-  <div class="splash">
+  <section class="splash">
     <h1>Juan Rodríguez</h1><br>
     <h3>Desarrollador BackEnd | Desarrollador Móvil</h3>
-    <button class="scroll-down" onclick="scrollToContent()">
+    <button class="scroll-down">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="white">
         <path d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.58L6 10.5z"/>
       </svg>
     </button>
-  </div>
+  </section>
 
-  <div class="about">
+  <section class="about">
     <h2>Sobre mí</h2>
     <br>
     <p>
       Soy un <strong>desarrollador backend</strong> apasionado por la programación y la tecnología. Me considero autodidacta, organizado y responsable, con habilidades destacadas para trabajar en equipo, tomar decisiones rápidas y manejar la presión. Estoy comprometido con el desarrollo continuo de mi carrera, explorando nuevas tecnologías y diversas áreas de la programación para encontrar mi verdadera pasión y especializarme en ella. Aunque actualmente me enfoco en el desarrollo backend, estoy abierto a nuevas oportunidades que me permitan crecer y expandir mis conocimientos.
     </p>
-  </div>
+    <button class="scroll-down">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="white">
+        <path d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.58L6 10.5z"/>
+      </svg>
+    </button>
+  </section>
 
+  <section class="experiencia">
+    <h2>Experiencia Laboral</h2><br>
+    <ul class="listaExperiencia">
+
+      <li class="itemExperiencia">
+        <div class="decorativeCircleList"></div>
+        <time datetime="2024-03">Marzo 2024 - Mayo 2024</time>
+        <h3>Práctica Laboral</h3>
+        <p>
+          Desarrollé un sistema de gestión de órdenes de trabajo para el área informática, que facilitó la creación de documentos para respaldar las labores de soporte técnico realizadas en los establecimientos de la comuna. Además, implementé la base de un sistema de bitácoras para el área de servicios generales, optimizando el control de los viajes realizados por los vehículos del departamento, y brindé soporte técnico directamente en los establecimientos de la comuna.
+        </p>
+      </li>
+
+      <li class="itemExperiencia">
+        <div class="decorativeCircleList"></div>
+        <time datetime="2024-03">Mayo 2024 - Actualidad</time>
+        <h3>Apoyo informático</h3>
+        <p>
+          Mejoré los sistemas desarrollados durante mi práctica laboral y completé el desarrollo del sistema de bitácoras, ambos implementados mediante una API REST utilizando NodeJS y Express. Además, desarrollé un sistema para interpretar los datos de los relojes de asistencia en algunos establecimientos, permitiendo exportar reportes individuales, calcular las horas trabajadas y registrar horas extras. Asimismo, implementé un sistema para registrar las salidas a terreno de los funcionarios del departamento, utilizando tecnología de reconocimiento facial con Python, integrada a una API REST para almacenar la información en una base de datos.
+        </p>
+      </li>
+
+    </ul>
+
+    <button class="scroll-down">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="white">
+        <path d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.58L6 10.5z"/>
+      </svg>
+    </button>
+  </section>
+
+  <button class="scroll-up">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="white">
+      <path d="M12 7.5l-6 6 1.41 1.41L12 10.33l4.59 4.58L18 13.5z"/>
+    </svg>
+  </button>
 
 </body>
 <script src="scripts.js"></script>
