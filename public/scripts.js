@@ -57,7 +57,7 @@ window.addEventListener("scroll", () => {
     debounceTimeout = setTimeout(() => {
         updateButtonsVisibility();
         scrollToNearestSection();
-    }, 50);
+    }, 100);
 });
 
 window.addEventListener("load", () => {
