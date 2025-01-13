@@ -287,6 +287,14 @@ body {
         left: 20px;
         transform: translate(-50%, 0);
     }
+
+    .techList {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    section {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -316,13 +324,20 @@ body {
 
     .experiencia{
         padding-top: 5rem;
-
     }
 
     .scroll-down {
         left: 20px;
         transform: translate(-50%, 0);
         bottom: 20px;
+    }
+
+    .techList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section {
+        max-width: 100%;
     }
 }
 
@@ -360,5 +375,13 @@ body {
         left: 20px;
         transform: translate(-50%, 0);
         bottom: 15px;
+    }
+
+    .techList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section {
+        max-width: 100%;
     }
 }
