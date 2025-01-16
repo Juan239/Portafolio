@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Geist', 'serif';    
 }
 
 html, body {
@@ -85,6 +85,7 @@ body {
 
 .link-perfiles img{
     width: 20px;
+    height: 20px;
     margin-right: 8px;
 }
 
