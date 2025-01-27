@@ -53,6 +53,17 @@ body {
     z-index: -1;
 }
 
+#construccion {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .splash {
     display: flex;
     flex-direction: column;
